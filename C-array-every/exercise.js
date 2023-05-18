@@ -5,7 +5,14 @@
 var students = ["Omar", "Austine", "Dany", "Swathi", "Lesley", "Rukmini"];
 var group = ["Austine", "Dany", "Swathi", "Daniel"];
 
-var groupContainsNonStudent;        // complete this statement
+function checkGroup(group) {
+  var groupContainsNonStudent = group.some(function(person) {
+    return !group.includes(person);
+  });
+  return groupContainsNonStudent;
+}
+
+var groupContainsNonStudent = checkGroup(group);
 
 if (groupContainsNonStudent) {
   console.log("The group has at least one intruder");
@@ -16,3 +23,5 @@ if (groupContainsNonStudent) {
 /* EXPECTED RESULT */
 
 // The group does not contain only students
+
+
