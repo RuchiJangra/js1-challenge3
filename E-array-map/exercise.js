@@ -3,3 +3,22 @@
 
 var numbers = [0.1, 0.2, 0.3, 0.4, 0.5];
 
+function multiply(number) {
+  return number * 100;
+}
+
+var newArray = numbers.map(multiply);
+
+///////////////////
+var numbers = [0.1, 0.2, 0.3, 0.4, 0.5];
+var newArray = numbers.map(function (number) {
+  return number * 100;
+});
+///////////////////
+var numbers = [0.1, 0.2, 0.3, 0.4, 0.5];
+var newArray = numbers.map((number) => {
+  return number * 100;
+});
+////////////// imlicit return
+var numbers = [0.1, 0.2, 0.3, 0.4, 0.5];
+var newArray = numbers.map((number) => number * 100);
