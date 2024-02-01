@@ -13,6 +13,18 @@ var result = [];
 
 //YOUR CODE SHOULD GO HERE
 
+arr.forEach(function (num) {
+  if (num % 3 === 0 && num % 5 === 0) {
+    result.push("FizzBuzz");
+  } else if (num % 3 === 0) {
+    result.push("Fizz");
+  } else if (num % 5 === 0) {
+    result.push("Buzz");
+  } else {
+    result.push(num);
+  }
+});
+
 console.log(result);
 
 //DO NOT REMOVE THIS CODE
